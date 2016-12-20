@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_gravity="top"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:onClick="onClick_Festival_menu"
+                    android:text="introduce" />
+
+                <Button
+                    android:id="@+id/guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="onClick_Festival_menu"
+                    android:text="operation guide" />
+
+                <Button
+                    android:id="@+id/facility"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.0"
+                    android:onClick="onClick_Festival_menu"
+                    android:text="Facilities" />
+            </LinearLayout>
+
+          <!--  <android.support.v4.view.ViewPager
+                android:id="@+id/festival_in_pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"></android.support.v4.view.ViewPager> -->
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/img1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:text="Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bookmarkButton"
+                    android:onClick="Bookmark" />
+
+                <TextView
+                    android:id="@+id/explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:text="            EXPLAIN
+            EXPLAIN
+            EXPLAIN
+            EXPLAIN
+            EXPLAIN
+            EXPLAIN"
+                    android:textSize="50dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

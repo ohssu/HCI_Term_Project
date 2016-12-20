@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="243dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/img1"
+            android:id="@+id/imageView6" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:background="@drawable/img2"
+                android:id="@+id/imageView9"
+                android:layout_weight="0.20" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:background="@drawable/img1"
+                android:id="@+id/imageView10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="282dp"
+        android:layout_height="310dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_weight="0.01">
+
+            <Button
+                android:text="Local"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:id="@+id/local"
+                android:layout_weight="0.19"
+                android:onClick="onClick" />
+
+            <Button
+                android:text="Thema"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/thema"
+                android:layout_weight="0.62"
+                android:onClick="onClick" />
+
+            <Button
+                android:text="Mypage"
+                android:layout_width="127dp"
+                android:layout_height="match_parent"
+                android:id="@+id/mypage"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="여행나침반"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/home"
+            android:onClick="onClick0"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/Seoul"
+                    android:onClick="onClick_local"
+                    android:layout_width="0dp"
+                    android:background="@drawable/su_state"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_height="140dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:id="@+id/KyungKi"
+                    android:background="@drawable/gg_state"
+                    android:onClick="onClick_local"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/KangWon"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gw_state"
+                    android:onClick="onClick_local"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:id="@+id/KyungSang"
+                    android:onClick="onClick_local"
+                    android:background="@drawable/ks_state"
+                    android:layout_weight="1"
+                    android:layout_height="140dp"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/ChoongCheong"
+                    android:background="@drawable/cc_state"
+                    android:onClick="onClick_local"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/JeonRa"
+                    android:layout_weight="1"
+                    android:background="@drawable/jr_state"
+                    android:onClick="onClick_local"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="140dp"
+                    android:id="@+id/JeJu"
+                    android:background="@drawable/jj_state"
+                    android:onClick="onClick_local"
+                    tools:ignore="InefficientWeight" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
